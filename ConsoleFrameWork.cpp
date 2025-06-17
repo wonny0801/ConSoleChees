@@ -17,11 +17,14 @@ void Init()
 	SetConsoleCursorInfo(hScreen[0], &cci);
 	SetConsoleCursorInfo(hScreen[1], &cci);
 
+	
+
 	GameMng::Getlns()->init();
 
 }
 void Update()
 {
+	
 	GameMng::Getlns()->Update();
 	
 }
@@ -104,3 +107,4 @@ void Flip()
 	SetConsoleActiveScreenBuffer(hScreen[screenIndex]);
 	screenIndex = !screenIndex;
 }
+

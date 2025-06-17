@@ -1,5 +1,6 @@
 #pragma once
 #include <stdio.h>
+#include <iostream>
 #include <Windows.h>	//win32 API
 #include <time.h>
 #include "Define.h"
@@ -8,7 +9,8 @@
 #include "Singleton.h"
 #include "State.h"
 #include "StateCtrl.h"
-
+//-------------------------------------
+#include "GameBoard.h"
 
 
 
@@ -29,3 +31,4 @@ void DrawStr(int x, int y, const char* str, WORD fColor, WORD bColor);
 void EngineSync(int fps);
 void ClearScreen();
 void Flip();
+

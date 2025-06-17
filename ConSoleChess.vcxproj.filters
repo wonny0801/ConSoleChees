@@ -28,6 +28,9 @@
     <Filter Include="State\GameState">
       <UniqueIdentifier>{b6814606-bf89-4172-93cc-d5c6cd064b3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameBoard">
+      <UniqueIdentifier>{aab7dcaf-386f-46da-8022-6b76e92289ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="GameState.cpp">
       <Filter>State\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBoard.cpp">
+      <Filter>GameBoard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="GameState.h">
       <Filter>State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBoard.h">
+      <Filter>GameBoard</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

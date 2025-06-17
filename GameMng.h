@@ -5,6 +5,8 @@ public:
 	GameMng();
 	~GameMng();
 
+	StateCtrl statectrl;
+
 	void init();
 	void Update();
 	void Draw();
