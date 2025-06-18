@@ -23,7 +23,7 @@ void GameState::Update()
 
 void GameState::Draw()
 {
-	DrawStr(15, 10, "GameState", WHITE, BLACK);
+	DrawStr(110, 10, "GameState", WHITE, BLACK);
 	gameboard.Draw();
 }
 

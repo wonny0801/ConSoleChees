@@ -18,7 +18,8 @@ void Init()
 	SetConsoleCursorInfo(hScreen[1], &cci);
 
 	
-
+	SetConsoleOutputCP(CP_UTF8);
+	std::wcout.imbue(std::locale("en_US.utf8"));
 	GameMng::Getlns()->init();
 
 }
@@ -76,6 +77,26 @@ void DrawChar(int x, int y, const char c, WORD fcolor, WORD bcolor)
 	str[1] = '\0';
 
 	WriteFile(hScreen[screenIndex], str, 2, &dw, NULL);
+}
+void DrawBoard(int x, int y, const wchar_t* board, WORD fcolor, WORD bcolor)
+{
+	if (x > 119 || x < 0 || y > 29 || y < 0)
+		return;
+
+	WORD color = (bcolor << 4) | (fcolor & 0x0F);
+	COORD coor = { x,y };
+	DWORD dw;
+	SetConsoleCursorPosition(hScreen[screenIndex], coor);
+	SetConsoleTextAttribute(hScreen[screenIndex], color);
+
+	int maxLen = 120 - x;
+	int strLen = wcslen(board);
+
+	if (maxLen < strLen)
+		strLen = maxLen;
+
+	WriteConsoleW(hScreen[screenIndex], board, strLen, &dw, NULL);
+
 }
 
 void EngineSync(int fps)
