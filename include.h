@@ -12,7 +12,7 @@
 #include "Unit.h"
 #include "GameBoard.h"
 //-------------------------------------
-
+#include "Pawn.h"
 
 
 

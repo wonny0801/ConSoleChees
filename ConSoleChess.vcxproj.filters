@@ -34,6 +34,12 @@
     <Filter Include="Unit">
       <UniqueIdentifier>{5e72f54e-405b-4f4d-92cb-4d9e24e060fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Chess Unit">
+      <UniqueIdentifier>{1170a433-1727-4765-aac4-2e6a6617781e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\Pawn">
+      <UniqueIdentifier>{b8776553-50e5-402d-bd42-7d4baa2d09e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="Unit.cpp">
       <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>Chess Unit\Pawn</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="Unit.h">
       <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>Chess Unit\Pawn</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

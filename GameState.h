@@ -7,6 +7,8 @@ public:
 
 	GameBoard gameboard;
 
+	Pawn blackPawn;
+
 	void Start();
 	void Update();
 	void Draw();

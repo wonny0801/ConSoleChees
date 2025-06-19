@@ -4,7 +4,7 @@ class Unit
 public:
 	int x;
 	int y;
-	wchar_t body;
+	const wchar_t* body;
 	WORD fColor;
 	WORD bColor;
 	bool isAlive;
@@ -12,9 +12,13 @@ public:
 	Unit();
 	~Unit();
 
-	void Update();
-	void Draw();
-	void Move();
-	void Enable();
-	void Disable();
+	virtual void Init(int x, int y, const wchar_t* unit);
+	virtual void Update();
+	virtual void Draw();
+	virtual void Move();
+	virtual void Attack();
+
+
+	virtual void Enable(int x, int y);
+	virtual void Disable();
 };

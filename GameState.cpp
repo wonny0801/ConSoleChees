@@ -2,7 +2,7 @@
 
 GameState::GameState()
 {
-	
+	blackPawn.Init(BOARD_A1,BLACK_PAWN);
 }
 
 GameState::~GameState()
@@ -19,12 +19,14 @@ void GameState::Update()
 	{
 		GameMng::Getlns()->statectrl.StateChange(new MenuState);
 	}
+	
 }
 
 void GameState::Draw()
 {
 	DrawStr(110, 10, "GameState", WHITE, BLACK);
 	gameboard.Draw();
+	blackPawn.Draw();
 }
 
 void GameState::Exit()

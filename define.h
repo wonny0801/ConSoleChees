@@ -17,6 +17,22 @@
 #define INTENSITY_CYAN     (FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY)
 #define INTENSITY_WHITE    (FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY)
 
+#define WHITE_KING      L"\u2654"
+#define WHITE_QUEEN     L"\u2655"
+#define WHITE_ROOK 	    L"\u2656"
+#define WHITE_BISHOP    L"\u2657"
+#define WHITE_KNIGHT    L"\u2658"
+#define WHITE_PAWN 	    L"\u2659"
+
+#define BLACK_KING  	L"\u265A"
+#define BLACK_QUEEN     L"\u265B"
+#define BLACK_ROOK  	L"\u265C"
+#define BLACK_BISHOP    L"\u265D"
+#define BLACK_KNIGHT    L"\u265E"
+#define BLACK_PAWN 	    L"\u265F"
+
+
+
 
 #define D_BOARD_SIZE 8
 
