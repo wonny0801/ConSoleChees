@@ -5,6 +5,7 @@ public:
 	Pawn();
 	~Pawn();
 
+	
 	// void Init();
 	// void Update();
 	// void Draw();

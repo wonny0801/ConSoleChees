@@ -12,7 +12,7 @@ public:
 	Unit();
 	~Unit();
 
-	virtual void Init(int x, int y, const wchar_t* unit);
+	virtual void Init(int x, int y, const wchar_t* unit,int colorNumber);
 	virtual void Update();
 	virtual void Draw();
 	virtual void Move();

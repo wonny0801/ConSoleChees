@@ -7,7 +7,8 @@ public:
 
 	GameBoard gameboard;
 
-	Pawn blackPawn;
+	TeamWhite whiteTeam;
+	TeamBlack blackTeam;
 
 	void Start();
 	void Update();

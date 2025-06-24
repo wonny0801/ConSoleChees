@@ -40,6 +40,24 @@
     <Filter Include="Chess Unit\Pawn">
       <UniqueIdentifier>{b8776553-50e5-402d-bd42-7d4baa2d09e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ChessTeam">
+      <UniqueIdentifier>{48ac8110-5842-423d-8986-a7eaa16ebd48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\King">
+      <UniqueIdentifier>{bcc8a540-5df8-461d-ad1f-23e523190f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\Queen">
+      <UniqueIdentifier>{2b28e025-ed4d-4a44-8a04-7b41bd0408c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\Knight">
+      <UniqueIdentifier>{63df77f2-807d-487f-b2ae-0ad79789f6cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\Rook">
+      <UniqueIdentifier>{de6a0a9f-84b2-47e3-96dd-d1386b91e06a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chess Unit\Bishop">
+      <UniqueIdentifier>{e15cd2e9-14c7-4e99-9ffd-a43c94cfa7e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -71,6 +89,27 @@
     </ClCompile>
     <ClCompile Include="Pawn.cpp">
       <Filter>Chess Unit\Pawn</Filter>
+    </ClCompile>
+    <ClCompile Include="Team_Black.cpp">
+      <Filter>ChessTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Team_White.cpp">
+      <Filter>ChessTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Chess Unit\King</Filter>
+    </ClCompile>
+    <ClCompile Include="Queen.cpp">
+      <Filter>Chess Unit\Queen</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Chess Unit\Knight</Filter>
+    </ClCompile>
+    <ClCompile Include="Rook.cpp">
+      <Filter>Chess Unit\Rook</Filter>
+    </ClCompile>
+    <ClCompile Include="Bishop.cpp">
+      <Filter>Chess Unit\Bishop</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +145,27 @@
     </ClInclude>
     <ClInclude Include="Pawn.h">
       <Filter>Chess Unit\Pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="Team_Black.h">
+      <Filter>ChessTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Team_White.h">
+      <Filter>ChessTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="King.h">
+      <Filter>Chess Unit\King</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>Chess Unit\Queen</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Chess Unit\Knight</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.h">
+      <Filter>Chess Unit\Rook</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.h">
+      <Filter>Chess Unit\Bishop</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

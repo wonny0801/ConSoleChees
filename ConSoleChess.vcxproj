@@ -127,28 +127,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bishop.cpp" />
     <ClCompile Include="ConsoleFrameWork.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameMng.cpp" />
     <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="King.cpp" />
+    <ClCompile Include="Knight.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="Pawn.cpp" />
+    <ClCompile Include="Queen.cpp" />
+    <ClCompile Include="Rook.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateCtrl.cpp" />
+    <ClCompile Include="Team_Black.cpp" />
+    <ClCompile Include="Team_White.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bishop.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameMng.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="include.h" />
+    <ClInclude Include="King.h" />
+    <ClInclude Include="Knight.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="Pawn.h" />
+    <ClInclude Include="Queen.h" />
+    <ClInclude Include="Rook.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateCtrl.h" />
+    <ClInclude Include="Team_Black.h" />
+    <ClInclude Include="Team_White.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,7 +2,9 @@
 
 GameState::GameState()
 {
-	blackPawn.Init(BOARD_A1,BLACK_PAWN);
+	
+	blackTeam.Init();
+	whiteTeam.Init();
 }
 
 GameState::~GameState()
@@ -26,7 +28,8 @@ void GameState::Draw()
 {
 	DrawStr(110, 10, "GameState", WHITE, BLACK);
 	gameboard.Draw();
-	blackPawn.Draw();
+	whiteTeam.Draw();
+	blackTeam.Draw();
 }
 
 void GameState::Exit()

@@ -2,8 +2,7 @@
 
 Pawn::Pawn()
 {
-	body = L" ";
-	fColor = GREEN;
+	
 }
 
 Pawn::~Pawn()

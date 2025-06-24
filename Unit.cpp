@@ -14,8 +14,12 @@ Unit::~Unit()
 {
 }
 
-void Unit::Init(int x, int y, const wchar_t* unit)
+void Unit::Init(int x, int y, const wchar_t* unit,int colorNumber)
 {
+	if (colorNumber == COLORNUMBER_WHITE)
+		fColor = GREEN;
+	if (colorNumber == COLORNUMBER_BLACK)
+		fColor = RED;
 	body = unit;
 	Enable(x, y);
 }

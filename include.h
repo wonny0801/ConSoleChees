@@ -13,11 +13,15 @@
 #include "GameBoard.h"
 //-------------------------------------
 #include "Pawn.h"
-
-
-
+#include "King.h"
+#include "Queen.h"
+#include "Knight.h"
+#include "Rook.h"
+#include "bishop.h"
 
 //----------------------------
+#include "Team_Black.h"
+#include "Team_White.h"
 #include "MenuState.h"
 #include "GameState.h"
 
