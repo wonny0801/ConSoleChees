@@ -6,4 +6,5 @@ public:
 	~Rook();
 
 	void Move();
+	void Select(int x, int y);
 };

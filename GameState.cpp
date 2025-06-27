@@ -2,7 +2,6 @@
 
 GameState::GameState()
 {
-	
 	blackTeam.Init();
 	whiteTeam.Init();
 }
@@ -21,13 +20,16 @@ void GameState::Update()
 	{
 		GameMng::Getlns()->statectrl.StateChange(new MenuState);
 	}
+	player.Update();
 	
 }
 
 void GameState::Draw()
 {
 	DrawStr(110, 10, "GameState", WHITE, BLACK);
-	gameboard.Draw();
+    gameboard.Draw();
+
+	player.Draw();
 	whiteTeam.Draw();
 	blackTeam.Draw();
 }

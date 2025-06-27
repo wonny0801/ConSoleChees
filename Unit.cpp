@@ -8,20 +8,35 @@ Unit::Unit()
 	fColor = WHITE;
 	bColor = BLACK;
 	isAlive = false;
+	TeamColor = 0;
+	Position = 0;
+	
 }
 
 Unit::~Unit()
 {
 }
 
-void Unit::Init(int x, int y, const wchar_t* unit,int colorNumber)
+void Unit::Init(int x, int y, const wchar_t* unit,
+	int colorNumber,int PositionNumber)
 {
 	if (colorNumber == COLORNUMBER_WHITE)
+	{
 		fColor = GREEN;
+		TeamColor = COLORNUMBER_WHITE;
+	}
+		
 	if (colorNumber == COLORNUMBER_BLACK)
-		fColor = RED;
+	{
+		fColor = INTENSITY_BLUE;
+		TeamColor = COLORNUMBER_BLACK;
+	}
+		
 	body = unit;
 	Enable(x, y);
+
+	Position = PositionNumber;
+	boardmap.emplace(PositionNumber, colorNumber);
 }
 
 void Unit::Update()
@@ -38,6 +53,11 @@ void Unit::Draw()
 
 void Unit::Move()
 {
+}
+
+void Unit::Select(int x, int y)
+{
+	
 }
 
 void Unit::Attack()

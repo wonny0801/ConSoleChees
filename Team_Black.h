@@ -7,6 +7,8 @@ public:
 	TeamBlack();
 	~TeamBlack();
 
+	bool YourTurn;
+
 	Pawn blackPawn[PAWN_MAX];
 	King blackKing;
 	Queen blackQueen;
@@ -19,6 +21,8 @@ public:
 	void Draw();
 	void Move();
 	void Attack();
+
+	void Select(int x, int y);
 
 
 	//void Enable(int x, int y);

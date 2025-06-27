@@ -11,3 +11,8 @@ Rook::~Rook()
 void Rook::Move()
 {
 }
+
+void Rook::Select(int x, int y)
+{
+
+}

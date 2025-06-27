@@ -137,6 +137,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="Pawn.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Queen.cpp" />
     <ClCompile Include="Rook.cpp" />
     <ClCompile Include="State.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Knight.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="Pawn.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Queen.h" />
     <ClInclude Include="Rook.h" />
     <ClInclude Include="Singleton.h" />

@@ -19,6 +19,7 @@
 
 #define COLORNUMBER_WHITE 0
 #define COLORNUMBER_BLACK 1
+#define COLORNUMBER_NULL 2
 
 #define PAWN_MAX 8
 #define UNIT_MAX 2
@@ -142,4 +143,76 @@ enum
 	E_7 = 21,
 	E_8 = 24
 };
+
+#define C_BOARD_A1 11
+#define C_BOARD_A2 12
+#define C_BOARD_A3 13
+#define C_BOARD_A4 14
+#define C_BOARD_A5 15
+#define C_BOARD_A6 16
+#define C_BOARD_A7 17
+#define C_BOARD_A8 18
+		
+#define C_BOARD_B1 21
+#define C_BOARD_B2 22
+#define C_BOARD_B3 23
+#define C_BOARD_B4 24
+#define C_BOARD_B5 25
+#define C_BOARD_B6 26
+#define C_BOARD_B7 27
+#define C_BOARD_B8 28
+		
+#define C_BOARD_C1 31
+#define C_BOARD_C2 32
+#define C_BOARD_C3 33
+#define C_BOARD_C4 34
+#define C_BOARD_C5 35
+#define C_BOARD_C6 36
+#define C_BOARD_C7 37
+#define C_BOARD_C8 38
+		
+#define C_BOARD_D1 41
+#define C_BOARD_D2 42
+#define C_BOARD_D3 43
+#define C_BOARD_D4 44
+#define C_BOARD_D5 45
+#define C_BOARD_D6 46
+#define C_BOARD_D7 47
+#define C_BOARD_D8 48
+		
+#define C_BOARD_E1 51
+#define C_BOARD_E2 52
+#define C_BOARD_E3 53
+#define C_BOARD_E4 54
+#define C_BOARD_E5 55
+#define C_BOARD_E6 56
+#define C_BOARD_E7 57
+#define C_BOARD_E8 58
+		
+#define C_BOARD_F1 61
+#define C_BOARD_F2 62
+#define C_BOARD_F3 63
+#define C_BOARD_F4 64
+#define C_BOARD_F5 65
+#define C_BOARD_F6 66
+#define C_BOARD_F7 67
+#define C_BOARD_F8 68
+		
+#define C_BOARD_G1 71
+#define C_BOARD_G2 72
+#define C_BOARD_G3 73
+#define C_BOARD_G4 74
+#define C_BOARD_G5 75
+#define C_BOARD_G6 76
+#define C_BOARD_G7 77
+#define C_BOARD_G8 78
+		
+#define C_BOARD_H1 81
+#define C_BOARD_H2 82
+#define C_BOARD_H3 83
+#define C_BOARD_H4 84
+#define C_BOARD_H5 85
+#define C_BOARD_H6 86
+#define C_BOARD_H7 87
+#define C_BOARD_H8 88
 

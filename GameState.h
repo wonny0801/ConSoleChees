@@ -10,6 +10,8 @@ public:
 	TeamWhite whiteTeam;
 	TeamBlack blackTeam;
 
+	Player player;
+
 	void Start();
 	void Update();
 	void Draw();

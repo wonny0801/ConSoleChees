@@ -4,7 +4,41 @@
 
 GameBoard::GameBoard()
 {
-	
+	boardmap.emplace(C_BOARD_A1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_B1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_C1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_D1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_E1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_F1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_G1, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_H1, COLORNUMBER_WHITE);
+								
+	boardmap.emplace(C_BOARD_A2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_B2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_C2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_D2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_E2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_F2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_G2, COLORNUMBER_WHITE);
+	boardmap.emplace(C_BOARD_H2, COLORNUMBER_WHITE);
+
+	boardmap.emplace(C_BOARD_A7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_B7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_C7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_D7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_E7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_F7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_G7, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_H7, COLORNUMBER_BLACK);
+								 
+	boardmap.emplace(C_BOARD_A8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_B8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_C8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_D8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_E8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_F8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_G8, COLORNUMBER_BLACK);
+	boardmap.emplace(C_BOARD_H8, COLORNUMBER_BLACK);
 }
 
 GameBoard::~GameBoard()
@@ -48,13 +82,13 @@ inline void GameBoard::DrawChessBoard(int size = 25)
 	
 }
 
-void GameBoard::PaintPixel(int x, int y)
+void GameBoard::PaintPixel(int x, int y, WORD fColor, WORD bColor)
 {
 	for (int pY = 0; pY < 2; pY++)
 	{
 		for (int pX = 0; pX < 6; pX++)
 		{
-			DrawChar(x + pX, y + pY, ' ', INTENSITY_WHITE, INTENSITY_WHITE);
+			DrawChar(x + pX, y + pY, ' ', fColor, bColor);
 		}
 	}
 	
@@ -84,45 +118,48 @@ void GameBoard::Draw()
 	WriteCoordinate();
 	
 }
+
 void GameBoard::PaintBoard()
 {
-	PaintPixel(BOARD_A1);
-	PaintPixel(BOARD_A3);
-	PaintPixel(BOARD_A5);
-	PaintPixel(BOARD_A7);
+	PaintPixel(BOARD_A1,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_A3,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_A5,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_A7,INTENSITY_WHITE,INTENSITY_WHITE);
+					   
+	PaintPixel(BOARD_B2,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_B4,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_B6,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_B8,INTENSITY_WHITE,INTENSITY_WHITE);
+					  
+	PaintPixel(BOARD_C1,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_C3,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_C5,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_C7,INTENSITY_WHITE,INTENSITY_WHITE);
+					   
+	PaintPixel(BOARD_D2,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_D4,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_D6,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_D8,INTENSITY_WHITE,INTENSITY_WHITE);
+					   
+	PaintPixel(BOARD_E1,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_E3,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_E5,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_E7,INTENSITY_WHITE,INTENSITY_WHITE);
+					   
+	PaintPixel(BOARD_F2,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_F4,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_F6,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_F8,INTENSITY_WHITE,INTENSITY_WHITE);
+					   
+	PaintPixel(BOARD_G1,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_G3,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_G5,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_G7,INTENSITY_WHITE,INTENSITY_WHITE);
+					  
+	PaintPixel(BOARD_H2,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_H4,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_H6,INTENSITY_WHITE,INTENSITY_WHITE);
+	PaintPixel(BOARD_H8,INTENSITY_WHITE,INTENSITY_WHITE);
 
-	PaintPixel(BOARD_B2);
-	PaintPixel(BOARD_B4);
-	PaintPixel(BOARD_B6);
-	PaintPixel(BOARD_B8);
-
-	PaintPixel(BOARD_C1);
-	PaintPixel(BOARD_C3);
-	PaintPixel(BOARD_C5);
-	PaintPixel(BOARD_C7);
-
-	PaintPixel(BOARD_D2);
-	PaintPixel(BOARD_D4);
-	PaintPixel(BOARD_D6);
-	PaintPixel(BOARD_D8);
-
-	PaintPixel(BOARD_E1);
-	PaintPixel(BOARD_E3);
-	PaintPixel(BOARD_E5);
-	PaintPixel(BOARD_E7);
-
-	PaintPixel(BOARD_F2);
-	PaintPixel(BOARD_F4);
-	PaintPixel(BOARD_F6);
-	PaintPixel(BOARD_F8);
-
-	PaintPixel(BOARD_G1);
-	PaintPixel(BOARD_G3);
-	PaintPixel(BOARD_G5);
-	PaintPixel(BOARD_G7);
-
-	PaintPixel(BOARD_H2);
-	PaintPixel(BOARD_H4);
-	PaintPixel(BOARD_H6);
-	PaintPixel(BOARD_H8);
+	
 }

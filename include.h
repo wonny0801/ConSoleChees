@@ -5,6 +5,7 @@
 #include <time.h>
 #include "Define.h"
 #include <string>
+#include <map>
 //-----------------------------------
 #include "Singleton.h"
 #include "State.h"
@@ -18,6 +19,8 @@
 #include "Knight.h"
 #include "Rook.h"
 #include "bishop.h"
+
+#include "Player.h"
 
 //----------------------------
 #include "Team_Black.h"

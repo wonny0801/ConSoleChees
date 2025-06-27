@@ -58,6 +58,9 @@
     <Filter Include="Chess Unit\Bishop">
       <UniqueIdentifier>{e15cd2e9-14c7-4e99-9ffd-a43c94cfa7e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{66396083-7893-41b4-9b93-756408064924}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="Bishop.cpp">
       <Filter>Chess Unit\Bishop</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +172,9 @@
     </ClInclude>
     <ClInclude Include="Bishop.h">
       <Filter>Chess Unit\Bishop</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
